@@ -1,0 +1,23 @@
+{
+  "baseUrl": "http://blog.brunoscopelliti.com",
+
+  "featuresDir": "tests/features",
+  "stepsDir": "tests/steps",
+  "resultsDir": "results",
+  "dictionaryFile": "tests/dict.json",
+  "reporter": "marvin",
+  "threads": 1,
+
+  "clean": false,
+  "capture": false,
+
+  "testTimeout": 15000,
+  "elementTimeout": 15000,
+  "tags": "@dev",
+  "browser": {
+    "browserName": "chrome",
+    "chromeOptions": {
+      "args": ["--no-sandbox"]
+    }
+  }
+}
