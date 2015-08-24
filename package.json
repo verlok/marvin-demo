@@ -8,7 +8,7 @@
     "test": "node node_modules/marvin-js/bin/marvin.js"
   },
   "dependencies": {
-    "marvin-js": "^0.0.5"
+    "marvin-js": "^0.0.6"
   },
   "devDependencies": {
     "grunt": "^0.4.5",

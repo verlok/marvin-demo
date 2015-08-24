@@ -9,15 +9,16 @@ var blogPage = require('../pages/blog');
 exports.define = function (steps) {
 
     steps.given(/I visit blog homepage/, function () {
-        logger.log("Simple log test");
         return blogPage.visit();
     });
 
     steps.when(/I click view all link/, function () {
+        logger.log("This is a simple log");
         return blogPage.viewAll.click();
     });
 
     steps.when(/I click the link of the latest post/, function () {
+        logger.assert(1+1, 2, "Ops... result of 1+1 is not two.");
         return blogPage.viewMore.click();
     });
 

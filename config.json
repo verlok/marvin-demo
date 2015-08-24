@@ -8,8 +8,9 @@
   "reporter": "marvin",
   "threads": 1,
 
-  "clean": false,
+  "clean": true,
   "capture": false,
+  "verbose": false,
 
   "testTimeout": 15000,
   "elementTimeout": 15000,
