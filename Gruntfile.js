@@ -20,12 +20,11 @@ module.exports = function (grunt) {
           }
         },
         shell: {
-            test: {
-                command: 'sudo npm test'
-            }
+            test: { command: 'sudo npm test' },
+            testWindows: { command: 'npm test' }
         }
     });
 
-    grunt.registerTask('default', ['clean:all', 'copy:marvin', 'shell:test']);
+    grunt.registerTask('default', ['clean:all', 'copy:marvin', 'shell:testWindows']);
 
 };
