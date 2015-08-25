@@ -13,7 +13,6 @@ exports.define = function (steps) {
     });
 
     steps.when(/I click view all link/, function () {
-        logger.log("This is a simple log");
         return blogPage.viewAll.click();
     });
 
@@ -23,6 +22,11 @@ exports.define = function (steps) {
     });
 
     steps.when(/I click the link of the first post/, function () {
+
+        logger.dir([{id: 1, name: 'Italy'}, {id: 2, name: 'France'}, {id: 3, name: 'Brazil', flag: true}], 'countries data');
+
+        logger.value("time", new Date());
+
         return blogPage.firstPost.click();
     });
 

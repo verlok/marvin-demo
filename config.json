@@ -9,8 +9,7 @@
   "threads": 1,
 
   "clean": true,
-  "capture": false,
-  "verbose": false,
+  "verbose": true,
 
   "testTimeout": 15000,
   "elementTimeout": 15000,

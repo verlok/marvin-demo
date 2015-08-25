@@ -1,9 +1,13 @@
-
-Page = require('marvin-js').Page;
+var session = require('marvin-js').session;
+var Page = require('marvin-js').Page;
 
 module.exports = new Page({
 
     url: { value: '/' },
+
+    onLoad: { 
+        value: function() { session.saveScreenshot("homepage"); } 
+    },
 
     viewAll: {
         get: function () {
