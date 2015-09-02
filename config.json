@@ -8,7 +8,7 @@
   "reporter": "marvin",
   "threads": 1,
 
-  "clean": true,
+  "clean": false,
   "verbose": true,
 
   "testTimeout": 15000,
@@ -21,6 +21,6 @@
       "args": ["--no-sandbox"]
     }
   }, {
-    "browserName": "firefox",
+    "browserName": "firefox"
   }]
 }
